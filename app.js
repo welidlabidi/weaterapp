@@ -18,7 +18,7 @@ document.getElementById("input").addEventListener("input", async event => {
 
   //fetch wheatercast for 5days
   const days = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=${apiKey} `
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&APPID=${apiKey} `
   );
   const data = await days.json();
   nextday(data);
@@ -32,7 +32,7 @@ document.getElementById("input").addEventListener("input", async event => {
         // fetch icon
         const imgIcon = data.list[0].weather[0].icon;
         const urlIcon =
-          "http://openweathermap.org/img/wn/" + imgIcon + "@2x.png";
+          "https://openweathermap.org/img/wn/" + imgIcon + "@2x.png";
         let sliceWeek = weekDay[date].slice(0, 3);
         const headerTemp = Math.floor(day.list[i * 8].main.temp);
 
