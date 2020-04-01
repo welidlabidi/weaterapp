@@ -1,0 +1,58 @@
+* {
+  outline: none;
+}
+body {
+  background: linear-gradient(45deg, #000000, #6b8e23, transparent);
+}
+.city {
+  display: flex;
+  justify-content: center;
+  height: 94px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.row {
+  justify-content: space-evenly;
+}
+.card {
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  font-family: initial;
+  box-shadow: 7px 7px black;
+  text-align: center;
+  background: linear-gradient(0deg, transparent, #6595ee, #fff);
+}
+input {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 15px;
+  border: none;
+  padding-left: 5px;
+  border-radius: 7px;
+  background-color: transparent;
+  font-size: 25px;
+}
+button {
+  border: none;
+  width: 95px;
+  font-family: cursive;
+  height: 30px;
+  border-radius: 13px;
+  background: transparent;
+  outline: 0;
+  margin-bottom: 10px;
+  border-color: black;
+  border: 1px solid;
+}
+button:hover {
+  background: linear-gradient(45deg, #000000, #6b8e23, transparent);
+  transform: scale(1.1);
+}
+header {
+  height: 120px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 47px;
+}
